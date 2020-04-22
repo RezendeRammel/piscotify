@@ -1,0 +1,12 @@
+@import 'reset';
+@import 'navbar';
+@import 'covid';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Circular, spotify-circular, 'Roboto',  Helvetica, Arial, sans-serif;
+}

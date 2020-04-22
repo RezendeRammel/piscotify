@@ -1,6 +1,25 @@
-# trabalho-web
+# Piscotify ( Bootstrap )
 
-## Usando Bootstrap
+- [ ] Navbar
+
+- [ ] Apoio à música em tempos de COVID-19
+
+- [ ] Vá de Premium. E seja feliz!
+
+- [ ] É música que você quer?
+    - foto da capa
+    - nome da banda
+    - ano de lançamento
+
+- [ ] Footer
+
+## Tecs que serão usadas
+
+- Bootstrap
+- Sass
+
+
+## Proposta do trabalho
 
 1. Implemente um site de notícias com layout similar ao apresentado pelo site globo.com. Sua página deverá ter:
     - Três colunas 
@@ -14,3 +33,5 @@
     - ano de lançamento
      
     Além disso, os álbums deverão ser organizados em forma de galeria.
+
+
