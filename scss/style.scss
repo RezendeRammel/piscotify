@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'navbar';
 @import 'covid';
+@import 'main';
 
 *{
   margin: 0;
@@ -9,4 +10,8 @@
 
 body{
   font-family: Circular, spotify-circular, 'Roboto',  Helvetica, Arial, sans-serif;
+}
+
+.container{
+  max-width: 1170px !important;
 }

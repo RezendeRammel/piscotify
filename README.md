@@ -1,16 +1,17 @@
 # Piscotify ( Bootstrap )
 
-- [ ] Navbar
+Based on [spotify](https://www.spotify.com/br/)
+## Todo
 
-- [ ] Apoio à música em tempos de COVID-19
-
-- [ ] Vá de Premium. E seja feliz!
-
+- [x] Navbar
+    - [ ] Responsive
+- [x] Apoio à música em tempos de COVID-19
+- [x] Vá de Premium. E seja feliz!
+    - [ ] Termos e condições
 - [ ] É música que você quer?
-    - foto da capa
-    - nome da banda
-    - ano de lançamento
-
+    - [ ] Foto da capa
+    - [ ] Nome da banda
+    - [ ] Ano de lançamento
 - [ ] Footer
 
 ## Tecs que serão usadas
