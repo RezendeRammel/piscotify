@@ -1,26 +1,17 @@
-# Piscotify ( Bootstrap )
+<span align="center">
+  <h2>Piscotify</h2>
+  <h4> Based on <a href="https://www.spotify.com/br/">spotify</a></h4>
+     
+  <p>
+    <img src=".github/piscotify.svg" alt="Piscotify" width="350">
+  </p>
 
-Based on [spotify](https://www.spotify.com/br/)
-## Todo
+  <p>
+    <img src="https://api.netlify.com/api/v1/badges/1669d1b3-a40b-4f97-853b-86d3a53ceee4/deploy-status" alt="Piscotify" >
+  </p>
+</span>
 
-- [x] Navbar
-    - [ ] Responsive
-- [x] Apoio à música em tempos de COVID-19
-- [x] Vá de Premium. E seja feliz!
-    - [ ] Termos e condições
-- [ ] É música que você quer?
-    - [ ] Foto da capa
-    - [ ] Nome da banda
-    - [ ] Ano de lançamento
-- [ ] Footer
-
-## Tecs que serão usadas
-
-- Bootstrap
-- Sass
-
-
-## Proposta do trabalho
+## 📚 Proposta do trabalho
 
 1. Implemente um site de notícias com layout similar ao apresentado pelo site globo.com. Sua página deverá ter:
     - Três colunas 
@@ -35,4 +26,22 @@ Based on [spotify](https://www.spotify.com/br/)
      
     Além disso, os álbums deverão ser organizados em forma de galeria.
 
+## 🔄 Todo
 
+- [x] Navbar
+
+  - [ ] Responsive
+
+- [x] Apoio à música em tempos de COVID-19
+
+- [x] Vá de Premium. E seja feliz!
+
+  - [ ] Termos e condições
+
+- [ ] É música que você quer?
+
+  - [ ] Foto da capa
+  - [ ] Nome da banda
+  - [ ] Ano de lançamento
+
+- [ ] Footer
