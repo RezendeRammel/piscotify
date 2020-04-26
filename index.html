@@ -19,21 +19,23 @@
 </head>
 
 <body>
-  <header class="navbar sticky-top ">
+  <header class="navbar navbar-expand-lg sticky-top ">
     <nav>
       <a class="navbar-brand" href="#">
         <img src="assets/piscotify.png" alt="">
       </a>
-      <form class="form-inline">
-        <a class="navbar-text link">Premium</a>
-        <a class="navbar-text link">Ajuda</a>
-        <a class="navbar-text link">Baixar</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline">
+          <a class="navbar-text link">Premium</a>
+          <a class="navbar-text link">Ajuda</a>
+          <a class="navbar-text link">Baixar</a>
 
-        <button class="link profile ">
-          <img src="assets/profile.jpg" alt="">
-          <span class="">Perfil</span>
-        </button>
-      </form>
+          <button class="link profile ">
+            <img src="assets/profile.jpg" alt="">
+            <span class="">Perfil</span>
+          </button>
+        </form>
+      </div>
     </nav>
   </header>
 
@@ -58,9 +60,11 @@
     </div>
   </section>
 
-
-  <!-- <section class="albuns">
-    <ul class="row">
+  <section class="albuns">
+    <h2 class="h1">É música que você quer?</h2>
+    <p class="lead">Continue curtindo suas favoritas de onde parou.</p>
+    <a class="btn btn-web-player" href="https://open.spotify.com/browse">Abrir o Web Player</a>
+    <!-- <ul class="row">
       <li class="col-xs-12">
         <figure onclick="location.href='https://open.spotify.com/track/7MK21UAFrkb79imh8zR4W6';">
           <figcaption class="album-play-button">
@@ -74,9 +78,9 @@
           </div>
         </figure>
       </li>
-    </ul>
-  </section> -->
-  
+    </ul> -->
+  </section>
+
   <!-- Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"

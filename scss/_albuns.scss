@@ -1,4 +1,47 @@
 section.albuns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2{
+    font-size: 40px;
+    color: #000000;
+    margin-top: 100px;
+    font-weight: 900;
+    line-height: 1.2;
+    // letter-spacing: 0.02em;
+  }
+
+  p.lead{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+  h2, p.lead{
+    text-align: center;
+  }
+
+  a.btn-web-player{
+ 
+    background-color: transparent;
+    box-shadow: 0 0 0 2px #616467 ;
+    color: #616467;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    border-radius: 500px;
+    padding: 12px 52px;
+    transition: 0.2s;
+   
+    &:hover{
+      transition: 0.2s;
+      color: white;
+      background-color: #616467 ;
+    }
+  }
+
   ul{
     width: 100vw;
   }
