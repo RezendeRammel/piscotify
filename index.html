@@ -10,8 +10,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -19,22 +21,34 @@
 </head>
 
 <body>
-  <header class="navbar navbar-expand-lg sticky-top ">
-    <nav>
-      <a class="navbar-brand" href="#">
-        <img src="assets/piscotify.png" alt="">
-      </a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="form-inline">
-          <a class="navbar-text link">Premium</a>
-          <a class="navbar-text link">Ajuda</a>
-          <a class="navbar-text link">Baixar</a>
 
-          <button class="link profile ">
-            <img src="assets/profile.jpg" alt="">
-            <span class="">Perfil</span>
-          </button>
-        </form>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top d-flex align-items-center">
+      <a class="navbar-brand" href="#">
+        <img src="assets/piscotify.png" width="120">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Premium <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Ajuda <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Baixar <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <button class="link profile ">
+              <img src="assets/profile.jpg" width="40" alt="Pisco Mengão">
+              <span class="">Perfil</span>
+            </button> </li>
+        </ul>
       </div>
     </nav>
   </header>
@@ -81,19 +95,19 @@
     </ul> -->
   </section>
 
-  <!-- Bootstrap JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
 
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
-
   <!-- Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 
 </body>

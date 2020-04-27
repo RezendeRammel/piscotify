@@ -1,79 +1,84 @@
 $header-background-color: rgba(0, 0, 0, 0.6);
 $header-color-hover: #2d46b9;
+$spacing-li: 10px;
+$transform-size: 574px;
 
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center !important;
   background-color: $header-background-color;
-  padding: 0 !important;
-  height: 80px;
-
+  padding: 5px 0;
 
   nav {
-    display: flex;
-    flex-direction: row;
+    display: flex !important;
+    align-items: flex-end !important;
     justify-content: space-between !important;
-    align-items: center ;
-    width: 1170px !important;
-    height: 100%;
-    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1170px !important;
 
-    a {
-      img {
-        max-height: 42px;
-        filter: brightness(0) invert(1);
-      }
+    a img {
+      filter: brightness(0) invert(1);
     }
 
-    $spacing: 10px;
+ 
+    ul {
+      li {
+        a {
+          margin: 0 $spacing-li;
+          padding: 0 $spacing-li;
+          cursor: pointer;
 
-    form {
-      a {
-        margin: 0 $spacing;
-        padding: 0 $spacing;
+          font-size: 16px;
 
-        cursor: pointer;
-
-        font-weight: bold;
-        color: white !important;
-
-        &:hover {
-          color: $header-color-hover !important;
-        }
-      }
-
-      button {
-        background-color: transparent;
-        border: none;
-
-        img {
-          display: inline-block;
-          border-radius: 50%;
-          max-height: 42px;
-        }
-
-        span {
-          color: white;
-          margin-left: 10px;
-          margin-right: 16px;
-          font-weight: bold;
+          font-weight: 700;
           color: white !important;
-        }
 
-        &:hover {
-          span {
+          &:hover {
             color: $header-color-hover !important;
           }
         }
 
-        &::before {
-          content: "|";
-          color: white;
-          padding-right: $spacing;
-          margin-right: $spacing;
-          display: inline-block;
+        button {
+          background-color: transparent;
+          border: none;
+          outline-offset: 0;
+
+          img {
+            display: inline-block;
+            border-radius: 50%;
+            max-height: 42px;
+          }
+
+          span {
+            color: white;
+            margin-left: 10px;
+            margin-right: 16px;
+            font-weight: bold;
+            color: white !important;
+          }
+          
+          &:focus{
+            outline: none;
+          }
+
+          &:hover {
+            span {
+              color: $header-color-hover !important;
+            }
+          }
         }
+
+
+        @media screen and (min-width: $transform-size){
+          &:last-child {
+            &::before {
+              content: "|";
+              color: white;
+              padding-right: $spacing-li;
+              margin-right: $spacing-li;
+              display: inline-block;
+            }
+          }
+        }
+       
       }
     }
   }
