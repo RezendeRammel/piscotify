@@ -22,8 +22,8 @@
 
 <body>
 
-  <header>
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top d-flex align-items-center">
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark  d-flex align-items-center">
       <a class="navbar-brand" href="#">
         <img src="assets/piscotify.png" width="120">
       </a>
@@ -78,8 +78,23 @@
     <h2 class="h1">É música que você quer?</h2>
     <p class="lead">Continue curtindo suas favoritas de onde parou.</p>
     <a class="btn btn-web-player" href="https://open.spotify.com/browse">Abrir o Web Player</a>
-    <!-- <ul class="row">
-      <li class="col-xs-12">
+
+    <div id="render-albuns"></div>
+
+    <div class="piscotify-albuns d-flex justify-content-center">
+      <ul id="render-albuns-ul" class="row justify-content-center">
+        <!-- <li class="col">
+          <img src="https://i.scdn.co/image/ab67616d00001e021eb5e996639036a49b09f1e5" alt="">
+          <p>Legião Urbana</p>
+          <p>Dois</p>
+          <p>1986</p>
+        </li> -->
+    </div>
+    </ul>
+
+
+    <!-- <ul>
+      <li class="col">
         <figure onclick="location.href='https://open.spotify.com/track/7MK21UAFrkb79imh8zR4W6';">
           <figcaption class="album-play-button">
             <h2 class="text-white">Human</h2>
@@ -95,7 +110,8 @@
     </ul> -->
   </section>
 
-
+  <script src="./js/album.js"></script>
+  <script src="./js/index.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
