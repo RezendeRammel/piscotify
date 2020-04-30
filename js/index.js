@@ -16,14 +16,17 @@ albumData.map((item) => {
 
   const artistElement = document.createElement('p');
   const artistElementText = document.createTextNode(artist);
+  artistElement.setAttribute('class', 'artist-element');
   artistElement.appendChild(artistElementText);
 
   const albumElement = document.createElement('p');
   const albumElementText = document.createTextNode(album);
+  albumElement.setAttribute('class', 'album-element');
   albumElement.appendChild(albumElementText);
 
   const dateElement = document.createElement('p');
   const dateElementText = document.createTextNode(date);
+  dateElement.setAttribute('class', 'date-element');
   dateElement.appendChild(dateElementText);
 
   imgAlbumLink.appendChild(imgElement);
