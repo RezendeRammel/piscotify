@@ -1,0 +1,61 @@
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 60px 30px;
+  margin-top: 90px;
+
+  a {
+    color: #fff;
+    &:hover {
+      text-decoration: none;
+      color: #1db954;
+    }
+  }
+
+  .footer-botton {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    font-size: 12px;
+    color: #919496;
+
+    a {
+      color: #919496;
+      &:hover {
+        text-decoration: none;
+        color: #1db954;
+      }
+    }
+
+    .links {
+      a {
+        padding: 0 10px;
+      }
+
+      &:first-child {
+        padding-right: 14px;
+      }
+    }
+
+    .copy {
+      .brazil-logo {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin-bottom: 10px;
+
+        img {
+          margin-left: 10px;
+          height: 18px;
+        }
+      }
+      
+      a {
+        margin-left: auto;
+      }
+
+     
+    }
+  }
+}
