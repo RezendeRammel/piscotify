@@ -3,7 +3,7 @@ footer {
   color: #fff;
   padding: 60px 30px;
   margin-top: 90px;
-
+  
   a {
     color: #fff;
     &:hover {
@@ -22,15 +22,22 @@ footer {
 
     a {
       color: #919496;
+      
       &:hover {
         text-decoration: none;
         color: #1db954;
       }
     }
 
-    .links {
+    .footer-links {
+      display: flex;
+      flex-direction: row;
+
+      @media screen and (max-width: 710px ){
+        flex-direction: column;
+      }
       a {
-        padding: 0 10px;
+        padding: 10px ;
       }
 
       &:first-child {
@@ -54,7 +61,9 @@ footer {
       a {
         margin-left: auto;
       }
-
+      p{
+        text-align: end;
+      }
      
     }
   }
