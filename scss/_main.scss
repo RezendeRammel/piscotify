@@ -43,15 +43,16 @@ div.hero-main {
 
   a.btn {
     font-size: 16px;
-    line-height: 1;
     border-radius: 500px;
-    padding: 19px 56px 21px;
-    text-transform: uppercase;
+    line-height: 1;
+    padding: 19px 56px ;
+    // text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 
     background-color: #1db954;
     color: white;
+
     &:hover {
       background-color: #1ed760;
       color: white;

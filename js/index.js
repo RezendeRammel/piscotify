@@ -9,7 +9,8 @@ albumData.map((item) => {
   imgAlbumLink.setAttribute('href', link);
   imgAlbumLink.setAttribute('target', 'blank');
   imgAlbumLink.setAttribute('rel', 'noopener noreferrer');
-
+  imgAlbumLink.setAttribute('data-aos', 'zoom-in');
+  
   const imgElement = document.createElement('img');
   imgElement.setAttribute('src', linkImg);
   imgElement.setAttribute('alt', album);
