@@ -1,50 +1,71 @@
 const albunsElement = document.querySelector('#render-albuns-ul');
 
+// Com está incrivel funcão economizei +30 linhas, foi de 40 para 70, parabéns pedro do passado :)
+function createElement(element, attributes, textNode) {
+  const newElement = document.createElement(element);
+
+  for (const attribute in attributes) {
+    if (attributes.hasOwnProperty(attribute)) {
+      const value = attributes[attribute];
+      newElement.setAttribute(attribute, value);
+    }
+  }
+
+  if (textNode) {
+    const newTextNode = document.createTextNode(textNode);
+    newElement.appendChild(newTextNode);
+  }
+
+  return newElement;
+}
+
 albumData.map((item) => {
   const { artist, album, date, link, linkImg } = item;
-  const albumItemElement = document.createElement('li');
-  albumItemElement.setAttribute('class', 'col');
 
-  const imgAlbumLink = document.createElement('a');
-  imgAlbumLink.setAttribute('href', link);
-  imgAlbumLink.setAttribute('target', 'blank');
-  imgAlbumLink.setAttribute('rel', 'noopener noreferrer');
-  imgAlbumLink.setAttribute('data-aos', 'zoom-in');
-  
-  const imgElement = document.createElement('img');
-  imgElement.setAttribute('src', linkImg);
-  imgElement.setAttribute('alt', album);
+  const albumItemElement = createElement('li', {
+    class: 'col',
+  });
 
-  const artistElement = document.createElement('p');
-  const artistElementText = document.createTextNode(artist);
-  artistElement.setAttribute('class', 'artist-element');
-  artistElement.appendChild(artistElementText);
+  const imgAlbumLink = createElement('a', {
+    href: link,
+    target: 'blank',
+    rel: 'noopener noreferrer',
+    'data-aos': 'zoom-in',
+  });
 
-  const albumElement = document.createElement('p');
-  const albumElementText = document.createTextNode(album);
-  albumElement.setAttribute('class', 'album-element');
-  albumElement.appendChild(albumElementText);
+  const imgElement = createElement('img', {
+    src: linkImg,
+    alt: album,
+  });
 
-  const dateElement = document.createElement('p');
-  const dateElementText = document.createTextNode(date);
-  dateElement.setAttribute('class', 'date-element');
-  dateElement.appendChild(dateElementText);
+  const artistElement = createElement(
+    'p',
+    {
+      class: 'artist-element',
+    },
+    artist
+  );
+
+  const albumElement = createElement(
+    'p',
+    {
+      class: 'album-element',
+    },
+    album
+  );
+
+  const dateElement = createElement(
+    'p',
+    {
+      class: 'date-element',
+    },
+    date
+  );
 
   imgAlbumLink.appendChild(imgElement);
-
   albumItemElement.appendChild(imgAlbumLink);
   albumItemElement.appendChild(artistElement);
   albumItemElement.appendChild(albumElement);
   albumItemElement.appendChild(dateElement);
-
   albunsElement.appendChild(albumItemElement);
 });
-
-{
-  /* <li class="col">
-  <img src="https://i.scdn.co/image/ab67616d00001e021eb5e996639036a49b09f1e5" alt="">
-  <p>Legião Urbana</p>
-  <p>Dois</p>
-  <p>1986</p>
-</li> */
-}
