@@ -24,13 +24,13 @@ albumData.map((item) => {
 
   const albumItemElement = createElement('li', {
     class: 'col',
+    'data-aos': 'zoom-in-up',
   });
 
   const imgAlbumLink = createElement('a', {
     href: link,
     target: 'blank',
     rel: 'noopener noreferrer',
-    'data-aos': 'zoom-in',
   });
 
   const imgElement = createElement('img', {
