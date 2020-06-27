@@ -26,6 +26,10 @@
    - ano de lançamento
      Além disso, os álbums deverão ser organizados em forma de galeria.
 
+## 📦 Entrega
+
+05/05/2020
+
 ## 📃 Docs
 
 #### [Booststrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
